@@ -1,25 +1,110 @@
 <!DOCTYPE html>
-<html>
-<body>
-<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-<h1>heading</h1>
+<html data-theme="light">
+  <title>Cryptobro News Feed</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+  />
 
-<p>paragraph.</p>
+  <main class="container">
+    <script
+      type="text/javascript"
+      src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"
+    ></script>
 
-<canvas class="glslCanvas" data-fragment-url="shader.frag" width="500" height="500"></canvas>
+    <canvas
+      class="glslCanvas"
+      data-fragment-url="shader.frag"
+      width="500"
+      height="500"
+    ></canvas>
 
-</body>
+    <h1>Cryptobro News Feed</h1>
 
-<style>
+    <nav>
+      <ul>
+        <li><strong>Brand</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#" role="button">Button</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <p>The latest news from the cryptobro community.</p>
+    </header>
+
+    <hr />
+
+    <article>
+      <h2>Catcoin is the new Dogecoin</h2>
+      <img src="https://cataas.com/cat/gif" />
+      <p>
+        Written by <a href="https://twitter.com/elonmusk">Elon Musk</a> on
+        2021-05-04
+      </p>
+      <p>
+        Catcoin is the new Dogecoin. It's a new cryptocurrency that is based on
+        the Ethereum blockchain. It's a meme coin, but it's also a serious
+        project. It's a community driven project, and it's a project that is
+        going to be around for a long time. It's a project that is going to be
+        around for a long time. It's a project that is going to be around for a
+        long time. It's a project that is going to be around for a long time.
+      </p>
+    </article>
+    <hr />
+
+    <article>
+      <h2>Catcoin is the new Dogecoin</h2>
+      <img src="https://cataas.com/cat/gif" />
+      <p>
+        Written by <a href="https://twitter.com/elonmusk">Elon Musk</a> on
+        2021-05-04
+      </p>
+      <ol>
+        <li>Catcoin is the new Dogecoin.</li>
+        <li>
+          It's a new cryptocurrency that is based on the Ethereum blockchain.
+        </li>
+      </ol>
+    </article>
+    <hr />
+
+    <article>
+      <h2>Catcoin is the new Dogecoin</h2>
+      <img src="https://cataas.com/cat/gif" />
+      <p>
+        Written by <a href="https://twitter.com/elonmusk">Elon Musk</a> on
+        2021-05-04
+      </p>
+      <p>
+        Catcoin is the new Dogecoin. It's a new cryptocurrency that is based on
+        the Ethereum blockchain. It's a meme coin, but it's also a serious
+        project. It's a community driven project, and it's a project that is
+        going to be around for a long time. It's a project that is going to be
+        around for a long time. It's a project that is going to be around for a
+        long time. It's a project that is going to be around for a long time.
+      </p>
+    </article>
+  </main>
+
+  <style>
+    body {
+      font-family: serif;
+    }
+    img {
+      margin: auto;
+    }
     canvas {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -9999;
-  }
-</style>
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -9999;
+    }
+  </style>
 </html>
-
