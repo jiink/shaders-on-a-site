@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html data-theme="light">
-  <title>Cryptobro News Feed</title>
+<head>
+    <title>Fun With Shaders</title>
+</head>  
+<body>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
@@ -14,12 +17,13 @@
 
     <canvas
       class="glslCanvas"
-      data-fragment-url="shader.frag"
+      id="background-shader"
+      data-fragment-url="background-shader.frag"
       width="500"
       height="500"
     ></canvas>
 
-    <h1>Cryptobro News Feed</h1>
+    <h1>Fun With Shaders</h1>
 
     <nav>
       <ul>
@@ -40,9 +44,9 @@
 
     <article>
       <h2>Catcoin is the new Dogecoin</h2>
-      <img src="https://cataas.com/cat/gif" />
+      <canvas class="glslCanvas" data-fragment-url="image-shader.frag" data-textures="image.jpg" width="345" height="345"/>
       <p>
-        Written by <a href="https://twitter.com/elonmusk">Elon Musk</a> on
+        Written by <a href="https://wiki.teamfortress.com/wiki/Engineer">Dell Conagher</a> on
         2021-05-04
       </p>
       <p>
@@ -58,9 +62,9 @@
 
     <article>
       <h2>Catcoin is the new Dogecoin</h2>
-      <img src="https://cataas.com/cat/gif" />
+      <img src="image.jpg" />
       <p>
-        Written by <a href="https://twitter.com/elonmusk">Elon Musk</a> on
+        Written by <a href="https://wiki.teamfortress.com/wiki/Engineer">Dell Conagher</a> on
         2021-05-04
       </p>
       <ol>
@@ -74,9 +78,9 @@
 
     <article>
       <h2>Catcoin is the new Dogecoin</h2>
-      <img src="https://cataas.com/cat/gif" />
+      <img src="image.jpg" />
       <p>
-        Written by <a href="https://twitter.com/elonmusk">Elon Musk</a> on
+        Written by <a href="https://wiki.teamfortress.com/wiki/Engineer">Dell Conagher</a> on
         2021-05-04
       </p>
       <p>
@@ -90,14 +94,19 @@
     </article>
   </main>
 
+</body>
+
   <style>
-    body {
-      font-family: serif;
+    .container {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 40px;
+        padding: 2%;
+        margin-top: 2%;
     }
     img {
       margin: auto;
     }
-    canvas {
+    #background-shader {
       width: 100vw;
       height: 100vh;
       display: block;
