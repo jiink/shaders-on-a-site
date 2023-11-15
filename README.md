@@ -10,4 +10,4 @@ These two files contain a super simple shader to get you started with, as well a
 Resources:
   - https://thebookofshaders.com/
   - https://github.com/patriciogonzalezvivo/glslCanvas
-  - https://docs.google.com/presentation/d/1kTzyBM5O_ZjA7DcHaUK_yX0lmDPLEHzfCVzsXrddWEU/edit?usp=sharing
+  - [Design Workshop slides](https://docs.google.com/presentation/d/1kTzyBM5O_ZjA7DcHaUK_yX0lmDPLEHzfCVzsXrddWEU/edit?usp=sharing)
